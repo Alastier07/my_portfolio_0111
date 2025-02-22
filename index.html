@@ -59,13 +59,15 @@
       }
     </style>
   </head>
-  <body class="py-16 bg-[#111111] text-gray-100 scrollbar-custom-main">
+  <body
+    class="max-[600px]:p-3 min-[600px]:py-16 bg-[#111111] text-gray-100 scrollbar-custom-main"
+  >
     <div
-      class="w-[580px] min-[768px]:w-[720px] min-[1020px]:w-[960px] min-[1260px]:w-[1200px] mx-auto min-[1260px]:flex min-[1260px]:space-x-6"
+      class="min-[600px]:w-[580px] min-[768px]:w-[720px] min-[1020px]:w-[960px] min-[1260px]:w-[1200px] mx-auto min-[1260px]:flex min-[1260px]:space-x-6"
     >
       <!-- Left Section -->
       <section
-        class="min-[1260px]:w-1/4 min-[1260px]:h-180 bg-[#1e1e1e] p-4 rounded-3xl shadow-lg border border-[#3C3D37] min-[1260px]:sticky min-[1260px]:top-16 max-[1260px]:mb-6"
+        class="min-[1260px]:w-1/4 min-[1260px]:h-180 bg-[#1e1e1e] min-[600px]:p-4 rounded-3xl shadow-lg border border-[#3C3D37] min-[1260px]:sticky min-[1260px]:top-16 max-[1260px]:mb-6"
       >
         <div
           id="info"
@@ -74,7 +76,7 @@
           <!-- Avatar -->
           <div class="flex justify-center min-[1260px]:mt-14 min-[1260px]:mb-8">
             <svg
-              class="w-30 h-30 min-[1260px]:w-40 min-[1260px]:h-40 rounded-4xl object-cover glowing-border bg-gray-100"
+              class="w-20 h-20 min-[600px]:w-30 min-[600px]:h-30 min-[1260px]:w-40 min-[1260px]:h-40 rounded-2xl min-[600px]:rounded-3xl min-[1260px]:rounded-4xl object-cover glowing-border bg-gray-100"
               xmlns="http://www.w3.org/2000/svg"
               version="1.0"
               width="400.000000pt"
@@ -204,14 +206,18 @@
               </g>
             </svg>
           </div>
-          <div class="max-[1260px]:p-4 max-[1260px]:pl-8">
+          <div
+            class="max-[600px]:py-2 max-[600px]:pl-4 max-[1260px]:p-4 max-[1260px]:pl-8"
+          >
             <!-- Name -->
-            <div class="text-2xl font-semibold text-center mb-4">
+            <div
+              class="text-lg min-[380px]:text-xl min-[600px]:text-2xl font-semibold text-center mb-2 min-[600px]:mb-4"
+            >
               Alastier "Aries" Catayoc
             </div>
             <!-- Position -->
             <div
-              class="text-sm text-center min-[1260px]:mb-4 p-2 rounded-full bg-[#2d2d2d] w-48 min-[1260px]:mx-auto"
+              class="text-[12px] min-[600px]:text-sm text-center min-[1260px]:mb-4 p-2 rounded-full bg-[#2d2d2d] w-42 min-[600px]:w-48 min-[1260px]:mx-auto"
             >
               Mobile Developer (Flutter)
             </div>
@@ -370,11 +376,14 @@
       </section>
       <!-- Main Section -->
       <main
-        class="min-[1260px]:w-1/2 flex-1 bg-[#1e1e1e] rounded-3xl shadow-lg border border-[#3C3D37]"
+        class="max-[600px]:mb-16 max-[1020px]:mb-4 min-[1260px]:w-1/2 flex-1 bg-[#1e1e1e] rounded-3xl shadow-lg border border-[#3C3D37]"
       >
-        <div class="flex justify-between items-center mb-8">
+        <div class="flex justify-between items-center mb-4 min-[600px]:mb-8">
           <!-- Title on the Left -->
-          <h2 id="section-title" class="text-3xl font-bold pl-6 pt-4">
+          <h2
+            id="section-title"
+            class="text-2xl min-[600px]:text-3xl font-bold pl-4 min-[600px]:pl-6 pt-4"
+          >
             About Me
           </h2>
 
@@ -385,7 +394,7 @@
             <!-- About Link -->
             <a
               href="#about"
-              class="text-base font-semibold px-2 py-1 text-[#3DC2EC] nav-link"
+              class="text-sm min-[600px]:text-base font-semibold min-[600px]:px-2 py-1 text-[#3DC2EC] nav-link"
               data-target="about"
               >About</a
             >
@@ -393,7 +402,7 @@
             <!-- Resume Link -->
             <a
               href="#resume"
-              class="text-base font-semibold px-2 py-1 hover:text-gray-100 nav-link"
+              class="text-sm min-[600px]:text-base font-semibold min-[600px]:px-2 py-1 hover:text-gray-100 nav-link"
               data-target="resume"
               >Resume</a
             >
@@ -401,7 +410,7 @@
             <!-- Portfolio Link -->
             <a
               href="#portfolio"
-              class="text-base font-semibold px-2 py-1 hover:text-gray-100 nav-link"
+              class="text-sm min-[600px]:text-base font-semibold min-[600px]:px-2 py-1 hover:text-gray-100 nav-link"
               data-target="portfolio"
               >Portfolio</a
             >
@@ -409,7 +418,7 @@
             <!-- Contact Link -->
             <a
               href="#contact"
-              class="text-base font-semibold px-2 py-1 hover:text-gray-100 nav-link"
+              class="text-sm min-[600px]:text-base font-semibold min-[600px]:px-2 py-1 hover:text-gray-100 nav-link"
               data-target="contact"
               >Contact</a
             >
@@ -421,7 +430,9 @@
           class="section opacity-0 transition-opacity duration-500"
         >
           <!-- Description -->
-          <div class="px-6 mb-10 text-gray-300">
+          <div
+            class="px-4 min-[600px]:px-6 mb-6 min-[600px]:mb-10 text-gray-300"
+          >
             <p class="mb-4">
               A dedicated Mobile developer (Flutter) with a strong expertise in
               creating cross-platform apps, working with REST APIs, widgets, and
@@ -449,14 +460,18 @@
           </div>
 
           <!-- Work Section -->
-          <div class="px-6 mb-10">
-            <h2 class="text-2xl font-bold">What I'm Doing</h2>
-            <div class="mt-6">
+          <div class="px-4 min-[600px]:px-6 mb-6 min-[600px]:mb-10">
+            <h2 class="text-xl min-[600px]:text-2xl font-bold">
+              What I'm Doing
+            </h2>
+            <div class="mt-4 min-[600px]:mt-6">
               <!-- Container for two items -->
-              <div class="grid grid-cols-1 min-[1020px]:grid-cols-2 gap-8">
+              <div
+                class="grid grid-cols-1 gap-4 min-[1020px]:grid-cols-2 min-[1020px]:gap-8"
+              >
                 <!-- Mobile App Item -->
                 <div
-                  class="flex p-8 bg-[#1A1A1D] rounded-xl border border-[#03C988]"
+                  class="max-[600px]:place-items-center min-[600px]:flex p-4 min-[600px]:p-8 bg-[#1A1A1D] rounded-xl border border-[#03C988]"
                 >
                   <!-- Icon on the left -->
                   <svg
@@ -466,7 +481,7 @@
                     id="Icons"
                     viewBox="0 0 30 30"
                     xml:space="preserve"
-                    class="w-[120px] h-[52px] text-[#3DC2EC]"
+                    class="w-[46px] h-[46px] min-[600px]:w-[120px] min-[600px]:h-[52px] text-[#3DC2EC]"
                   >
                     <path
                       d="M19,23v4c0,1.1-0.9,2-2,2H7c-1.1,0-2-0.9-2-2V5c0-1.1,0.9-2,2-2h10c1.1,0,2,0.9,2,2v2"
@@ -518,9 +533,11 @@
                   </svg>
 
                   <!-- Title and Description on the Right -->
-                  <div class="ml-4">
-                    <h3 class="text-lg font-bold">Mobile Apps</h3>
-                    <p class="mt-2 text-gray-300">
+                  <div
+                    class="max-[600px]:mt-4 min-[600px]:ml-4 max-[600px]:place-items-center"
+                  >
+                    <h3 class="min-[600px]:text-lg font-bold">Mobile Apps</h3>
+                    <p class="mt-2 text-gray-300 max-[600px]:text-center">
                       Professional expertise in developing high-performance
                       applications for both Android and iOS platforms.
                     </p>
@@ -529,7 +546,7 @@
 
                 <!-- Web Development Item -->
                 <div
-                  class="flex p-8 bg-[#1A1A1D] rounded-xl border border-[#FF6500]"
+                  class="max-[600px]:place-items-center min-[600px]:flex p-4 min-[600px]:p-8 bg-[#1A1A1D] rounded-xl border border-[#03C988]"
                 >
                   <!-- Icon on the left -->
                   <svg
@@ -540,7 +557,7 @@
                     id="Capa_1"
                     viewBox="0 0 419.931 419.931"
                     xml:space="preserve"
-                    class="w-[120px] h-[58px] stroke-current stroke-10 text-[#3DC2EC]"
+                    class="w-[46px] h-[46px] min-[600px]:w-[120px] min-[600px]:h-[58px] stroke-current stroke-10 text-[#3DC2EC]"
                   >
                     <g>
                       <g>
@@ -568,9 +585,13 @@
                   </svg>
 
                   <!-- Title and Description on the Right -->
-                  <div class="ml-4">
-                    <h3 class="text-lg font-bold">Web Development</h3>
-                    <p class="mt-2 text-gray-300">
+                  <div
+                    class="max-[600px]:mt-4 min-[600px]:ml-4 max-[600px]:place-items-center"
+                  >
+                    <h3 class="min-[600px]:text-lg font-bold">
+                      Web Development
+                    </h3>
+                    <p class="mt-2 text-gray-300 max-[600px]:text-center">
                       Quality development of websites, focusing on performance,
                       scalability, and exceptional user experiences.
                     </p>
@@ -579,13 +600,13 @@
 
                 <!-- Backend Development Item -->
                 <div
-                  class="flex p-8 bg-[#1A1A1D] rounded-xl border border-[#FF6500]"
+                  class="max-[600px]:place-items-center min-[600px]:flex p-4 min-[600px]:p-8 bg-[#1A1A1D] rounded-xl border border-[#03C988]"
                 >
                   <!-- Icon on the left -->
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1024 1024"
-                    class="w-[102px] h-[50px]"
+                    class="w-[46px] h-[46px] min-[600px]:w-[102px] min-[600px]:h-[50px]"
                     version="1.1"
                   >
                     <path class="fill-none" d="M432.4 453.5l-17 46.7h34.4z" />
@@ -612,9 +633,13 @@
                   </svg>
 
                   <!-- Title and Description on the Right -->
-                  <div class="ml-4">
-                    <h3 class="text-lg font-bold">Backend Development</h3>
-                    <p class="mt-2 text-gray-300">
+                  <div
+                    class="max-[600px]:mt-4 min-[600px]:ml-4 max-[600px]:place-items-center"
+                  >
+                    <h3 class="min-[600px]:text-lg font-bold">
+                      Backend Development
+                    </h3>
+                    <p class="mt-2 text-gray-300 max-[600px]:text-center">
                       Performance-driven backend services built for scalability
                       and a seamless user experience.
                     </p>
@@ -623,13 +648,13 @@
 
                 <!-- POS Development Item -->
                 <div
-                  class="flex p-8 bg-[#1A1A1D] rounded-xl border border-[#FF6500]"
+                  class="max-[600px]:place-items-center min-[600px]:flex p-4 min-[600px]:p-8 bg-[#1A1A1D] rounded-xl border border-[#03C988]"
                 >
                   <!-- Icon on the left -->
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    class="w-[102px] h-[50px]"
+                    class="w-[46px] h-[46px] min-[600px]:w-[102px] min-[600px]:h-[50px]"
                     viewBox="0 0 24 24"
                     version="1.1"
                   >
@@ -657,9 +682,13 @@
                   </svg>
 
                   <!-- Title and Description on the Right -->
-                  <div class="ml-4">
-                    <h3 class="text-lg font-bold">POS Development</h3>
-                    <p class="mt-2 text-gray-300">
+                  <div
+                    class="max-[600px]:mt-4 min-[600px]:ml-4 max-[600px]:place-items-center"
+                  >
+                    <h3 class="min-[600px]:text-lg font-bold">
+                      POS Development
+                    </h3>
+                    <p class="mt-2 text-gray-300 max-[600px]:text-center">
                       Robust and efficient systems designed for seamless
                       transactions to support business growth.
                     </p>
@@ -670,12 +699,12 @@
           </div>
 
           <!-- Skills Section -->
-          <div class="px-6 mb-10">
-            <h2 class="text-2xl font-bold">Skills</h2>
+          <div class="px-4 min-[600px]:px-6 mb-6 min-[600px]:mb-10">
+            <h2 class="text-xl min-[600px]:text-2xl font-bold">Skills</h2>
             <!-- Primary -->
-            <div class="mt-6 overflow-x-auto scrollbar-custom">
+            <div class="min-[600px]:mt-6 overflow-x-auto scrollbar-custom">
               <!-- Flex container to show skills in one row -->
-              <div class="flex gap-8 mb-8">
+              <div class="flex gap-8 mt-4 mb-4 min-[600px]:mb-8">
                 <!-- Dart -->
                 <a href="https://dart.dev/" target="_blank">
                   <div
@@ -1840,10 +1869,10 @@
             </div>
             <!-- Secondary -->
             <div
-              class="mt-8 overflow-x-auto scrollbar-custom scrollbar-custom-secondary"
+              class="mt-4 min-[600px]:mt-6 overflow-x-auto scrollbar-custom scrollbar-custom-secondary"
             >
               <!-- Flex container to show skills in one row -->
-              <div class="flex gap-8 mb-8">
+              <div class="flex gap-8 mb-4 min-[600px]:mb-8">
                 <!-- AWS -->
                 <a href="https://aws.amazon.com/" target="_blank">
                   <div
