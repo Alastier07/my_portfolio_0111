@@ -6,22 +6,6 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Alastier Catayoc</title>
     <style>
-      @keyframes glow {
-        0% {
-          box-shadow: 0 0 1px 1px #1a1a1d, 0 0 2px 1px #1a1a1d;
-        }
-        50% {
-          box-shadow: 0 0 2px 1px #03c988, 0 0 3px 2px #03c988;
-        }
-        100% {
-          box-shadow: 0 0 1px 1px #1a1a1d, 0 0 2px 1px #1a1a1d;
-        }
-      }
-
-      .glowing-border {
-        animation: glow 1s infinite; /* 1.5 second duration for smoother effect */
-      }
-
       /* Styling for Webkit browsers (Chrome, Safari, Edge, etc.) */
       .scrollbar-custom-main::-webkit-scrollbar {
         width: 8px; /* Horizontal scrollbar height */
@@ -67,16 +51,16 @@
     >
       <!-- Left Section -->
       <section
-        class="min-[1260px]:w-1/4 min-[1260px]:h-180 bg-[#1e1e1e] min-[600px]:p-4 rounded-3xl shadow-lg border border-[#3C3D37] min-[1260px]:sticky min-[1260px]:top-16 max-[1260px]:mb-6"
+        class="min-[1260px]:w-1/4 min-[1260px]:h-172 bg-[#1e1e1e] min-[600px]:p-4 rounded-3xl shadow-lg border border-[#3C3D37] min-[1260px]:sticky min-[1260px]:top-16 max-[1260px]:mb-6"
       >
         <div
           id="info"
           class="opacity-0 transition-opacity duration-600 max-[1260px]:p-4 max-[1260px]:flex"
         >
           <!-- Avatar -->
-          <div class="flex justify-center min-[1260px]:mt-14 min-[1260px]:mb-8">
+          <div class="flex justify-center min-[1260px]:mt-14 min-[1260px]:mb-6">
             <svg
-              class="w-20 h-20 min-[600px]:w-30 min-[600px]:h-30 min-[1260px]:w-40 min-[1260px]:h-40 rounded-2xl min-[600px]:rounded-3xl min-[1260px]:rounded-4xl object-cover glowing-border bg-gray-100"
+              class="w-20 h-20 min-[600px]:w-30 min-[600px]:h-30 min-[1260px]:w-36 min-[1260px]:h-36 rounded-2xl min-[600px]:rounded-3xl min-[1260px]:rounded-4xl object-cover bg-gray-100"
               xmlns="http://www.w3.org/2000/svg"
               version="1.0"
               width="400.000000pt"
@@ -471,7 +455,7 @@
               >
                 <!-- Mobile App Item -->
                 <div
-                  class="max-[600px]:place-items-center min-[600px]:flex p-4 min-[600px]:p-8 bg-[#1A1A1D] rounded-xl border border-[#03C988]"
+                  class="min-[600px]:flex p-4 min-[600px]:p-8 bg-[#1A1A1D] rounded-xl border border-[#03C988]"
                 >
                   <!-- Icon on the left -->
                   <svg
@@ -481,7 +465,7 @@
                     id="Icons"
                     viewBox="0 0 30 30"
                     xml:space="preserve"
-                    class="w-[46px] h-[46px] min-[600px]:w-[120px] min-[600px]:h-[52px] text-[#3DC2EC]"
+                    class="w-[46px] h-[46px] min-[600px]:w-[120px] min-[600px]:h-[52px] text-[#3DC2EC] max-[600px]:mx-auto"
                   >
                     <path
                       d="M19,23v4c0,1.1-0.9,2-2,2H7c-1.1,0-2-0.9-2-2V5c0-1.1,0.9-2,2-2h10c1.1,0,2,0.9,2,2v2"
@@ -534,10 +518,10 @@
 
                   <!-- Title and Description on the Right -->
                   <div
-                    class="max-[600px]:mt-4 min-[600px]:ml-4 max-[600px]:place-items-center"
+                    class="max-[600px]:mt-4 min-[600px]:ml-4 max-[600px]:text-center"
                   >
                     <h3 class="min-[600px]:text-lg font-bold">Mobile Apps</h3>
-                    <p class="mt-2 text-gray-300 max-[600px]:text-center">
+                    <p class="mt-2 text-gray-300">
                       Professional expertise in developing high-performance
                       applications for both Android and iOS platforms.
                     </p>
@@ -546,7 +530,7 @@
 
                 <!-- Web Development Item -->
                 <div
-                  class="max-[600px]:place-items-center min-[600px]:flex p-4 min-[600px]:p-8 bg-[#1A1A1D] rounded-xl border border-[#03C988]"
+                  class="min-[600px]:flex p-4 min-[600px]:p-8 bg-[#1A1A1D] rounded-xl border border-[#03C988]"
                 >
                   <!-- Icon on the left -->
                   <svg
@@ -557,7 +541,7 @@
                     id="Capa_1"
                     viewBox="0 0 419.931 419.931"
                     xml:space="preserve"
-                    class="w-[46px] h-[46px] min-[600px]:w-[120px] min-[600px]:h-[58px] stroke-current stroke-10 text-[#3DC2EC]"
+                    class="w-[46px] h-[46px] min-[600px]:w-[120px] min-[600px]:h-[58px] stroke-current stroke-10 text-[#3DC2EC] max-[600px]:mx-auto"
                   >
                     <g>
                       <g>
@@ -586,12 +570,12 @@
 
                   <!-- Title and Description on the Right -->
                   <div
-                    class="max-[600px]:mt-4 min-[600px]:ml-4 max-[600px]:place-items-center"
+                    class="max-[600px]:mt-4 min-[600px]:ml-4 max-[600px]:text-center"
                   >
                     <h3 class="min-[600px]:text-lg font-bold">
                       Web Development
                     </h3>
-                    <p class="mt-2 text-gray-300 max-[600px]:text-center">
+                    <p class="mt-2 text-gray-300">
                       Quality development of websites, focusing on performance,
                       scalability, and exceptional user experiences.
                     </p>
@@ -600,13 +584,13 @@
 
                 <!-- Backend Development Item -->
                 <div
-                  class="max-[600px]:place-items-center min-[600px]:flex p-4 min-[600px]:p-8 bg-[#1A1A1D] rounded-xl border border-[#03C988]"
+                  class="min-[600px]:flex p-4 min-[600px]:p-8 bg-[#1A1A1D] rounded-xl border border-[#03C988]"
                 >
                   <!-- Icon on the left -->
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1024 1024"
-                    class="w-[46px] h-[46px] min-[600px]:w-[102px] min-[600px]:h-[50px]"
+                    class="w-[46px] h-[46px] min-[600px]:w-[102px] min-[600px]:h-[50px] max-[600px]:mx-auto"
                     version="1.1"
                   >
                     <path class="fill-none" d="M432.4 453.5l-17 46.7h34.4z" />
@@ -634,12 +618,12 @@
 
                   <!-- Title and Description on the Right -->
                   <div
-                    class="max-[600px]:mt-4 min-[600px]:ml-4 max-[600px]:place-items-center"
+                    class="max-[600px]:mt-4 min-[600px]:ml-4 max-[600px]:text-center"
                   >
                     <h3 class="min-[600px]:text-lg font-bold">
                       Backend Development
                     </h3>
-                    <p class="mt-2 text-gray-300 max-[600px]:text-center">
+                    <p class="mt-2 text-gray-300">
                       Performance-driven backend services built for scalability
                       and a seamless user experience.
                     </p>
@@ -648,13 +632,13 @@
 
                 <!-- POS Development Item -->
                 <div
-                  class="max-[600px]:place-items-center min-[600px]:flex p-4 min-[600px]:p-8 bg-[#1A1A1D] rounded-xl border border-[#03C988]"
+                  class="min-[600px]:flex p-4 min-[600px]:p-8 bg-[#1A1A1D] rounded-xl border border-[#03C988]"
                 >
                   <!-- Icon on the left -->
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                    class="w-[46px] h-[46px] min-[600px]:w-[102px] min-[600px]:h-[50px]"
+                    class="w-[46px] h-[46px] min-[600px]:w-[102px] min-[600px]:h-[50px] max-[600px]:mx-auto"
                     viewBox="0 0 24 24"
                     version="1.1"
                   >
@@ -683,12 +667,12 @@
 
                   <!-- Title and Description on the Right -->
                   <div
-                    class="max-[600px]:mt-4 min-[600px]:ml-4 max-[600px]:place-items-center"
+                    class="max-[600px]:mt-4 min-[600px]:ml-4 max-[600px]:text-center"
                   >
                     <h3 class="min-[600px]:text-lg font-bold">
                       POS Development
                     </h3>
-                    <p class="mt-2 text-gray-300 max-[600px]:text-center">
+                    <p class="mt-2 text-gray-300">
                       Robust and efficient systems designed for seamless
                       transactions to support business growth.
                     </p>
